@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Env & secrets
+.env
+.env.local
+*.env
+
+# Build
+dist/
+build/
+out/
+
+# Python
+__pycache__/
+.ruff_cache/
+*.pyc
+
+# Logs
+*.log
+logs/
+
+# Data (local DB, vector stores, sessions)
+data/
+*.sqlite
+*.db
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Config MeiLin/OpenClaw (chứa secret + dữ liệu cá nhân — KHÔNG commit)
+
+# vendor/ — dependencies (chỉ track README, còn lại git-ignored)
+vendor/*
+!vendor/README.md

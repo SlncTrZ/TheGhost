@@ -1,0 +1,14 @@
+# Chuẩn line endings (chống CRLF làm hỏng script)
+* text=auto
+
+# Shell scripts BẮT BUỘC LF (CRLF làm bash fail)
+*.sh text eol=lf
+
+# PowerShell giữ CRLF (chuẩn Windows)
+*.ps1 text eol=crlf
+
+# Markdown/JSON/YAML — LF
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf

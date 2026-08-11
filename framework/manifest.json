@@ -1,0 +1,46 @@
+{
+  "name": "TheGhost",
+  "version": "1.0",
+  "description": "Cyber Brain wrapper — chuẩn code/memory/security + skills cho OpenClaw",
+  "vision": "STRATEGY.md",
+  "read_first": ["STRATEGY.md", "README.md", "framework/manifest.json"],
+  "standards": {
+    "code": "framework/AGENTS.md",
+    "research_template": "framework/research-template.md",
+    "adr_template": "framework/ADR-template.md",
+    "checklist": "framework/code-checklist.md",
+    "memory": "framework/memory-standard.md",
+    "security": "framework/security-standard.md"
+  },
+  "skills": [
+    "code-standard",
+    "memory-standard",
+    "security-standard",
+    "bootstrap"
+  ],
+  "workspace_files": {
+    "AGENTS.md": "framework/AGENTS.md (tham chiếu chuẩn)",
+    "MEMORY.md": "ký ức bền vững (memory-standard)",
+    "daily/": "nhật ký ngày YYYY-MM-DD.md",
+    "research/": "tri thức nghiên cứu",
+    "SOUL.md": "bản sắc agent",
+    "USER.md": "hồ sơ người dùng",
+    "IDENTITY.md": "danh tính agent"
+  },
+  "bootstrap_steps": [
+    "hiểu repo (STRATEGY + README + manifest)",
+    "đảm bảo framework trong workspace",
+    "cập nhật workspace/AGENTS.md trỏ chuẩn",
+    "cài 4 skills vào registry",
+    "thiết lập cấu trúc memory (MEMORY/daily/research/SOUL/USER)",
+    "cấu hình openclaw.json (skills/TZ/workspace)",
+    "nghiệm thu (đọc skill + tra memory + verify)",
+    "báo cáo danh sách đã tự cấu hình"
+  ],
+  "safety": [
+    "không tự thêm secret (chỉ tạo .env rỗng)",
+    "không xóa dữ liệu hiện có (merge, không ghi đè)",
+    "không sửa source vendor/openclaw",
+    "mọi thay đổi phải báo cáo lại"
+  ]
+}
